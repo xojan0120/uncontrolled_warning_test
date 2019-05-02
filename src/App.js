@@ -23,7 +23,7 @@ class App extends React.Component {
     // [問題]これはWarningになる
     // (Warning: A component is changing a controlled input of type text to be uncontrolled.)
     // uncontrolledになるのは、フォームのvalueがnullやundefinedになる場合に発生する。
-    // ここでは、this.state.group.text3がセットされずundefinedになるために警告がでる。
+    // ここでは、this.state.group.text3やtext4がセットされずundefinedになるために警告がでる。
     this.setState({ 
       group: { text2: event.target.value }
     });
